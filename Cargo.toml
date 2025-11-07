@@ -41,7 +41,7 @@ name = "okta_device_grant"
 required-features = ["reqwest-blocking"]
 
 [dependencies]
-base64 = "0.21"
+base64 = "0.22"
 # Disable 'time' dependency since it triggers RUSTSEC-2020-0071 and we don't need it.
 chrono = { version = "0.4", default-features = false, features = [
     "clock",
@@ -50,7 +50,7 @@ chrono = { version = "0.4", default-features = false, features = [
 ] }
 thiserror = "1.0"
 http = "1.0"
-itertools = "0.10"
+itertools = "0.14"
 log = "0.4"
 oauth2 = { version = "5.0.0", default-features = false }
 rand = "0.8.5"
